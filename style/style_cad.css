@@ -1,0 +1,137 @@
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,600;1,300;1,400&display=swap');
+
+/* CORES */
+/* 
+#F5F5F5
+#252525
+#5909CE
+#F48400
+#9061C2 */
+
+/* INICIO */
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: Flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/planta_cad_1.png');
+    background-size: 100%;
+    backdrop-filter: brightness(50%);
+}
+aside, main{
+    width: 50%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* BLOCO ESQUERDA */
+aside{
+    padding: 8rem;
+}
+#text_proposito{
+    font-size: 8.0rem;
+    font-weight: bold;
+    color:#F5F5F5;
+    margin-top: 2rem;
+}
+#s_purple{
+    color: #5909CE;
+
+}
+#logo{
+    height:4.0rem;
+    margin-top: 3rem;
+}
+
+/* BLOCO DIREITA */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+#formulario{
+    background-color: #F5F5F5;
+    height: 56.2rem;
+    border-radius:3rem;
+    width: 40rem;
+    box-shadow: 1.6rem 1.6rem 1.6rem rgba(0, 0, 0, 0.15);
+    padding: 0 4.4rem;
+
+}
+#titulo{
+    margin: 8.8rem 0 6.4rem 0;
+    font-size: 3.2rem;
+}
+label, input{
+    font-family: 'Rubik';
+    font-size: 1.6rem;
+}
+input{
+    width: 100%;
+    height: 3.4rem;
+    margin: 0.4rem 0 1.5rem 0;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: block;
+}
+#botoes{
+    margin: 4.8rem auto 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+    align-items: center;
+}
+#botoes_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.botao{
+    height: 4.4rem;
+    width: 16rem;
+    padding: 0 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background-color:transparent;
+    border: transparent;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius:50px;
+    /* obs: foi usado px, pois não se altera de dispostivo para dispositivo */
+}
+
+.fill{
+    background-color: #5909CE;
+    color: #fff;
+    border: solid 1px #5909CE;
+}
+.invisible{
+    color: #5909CE;
+    border: solid 3px #5909CE;
+}
+.google{
+    width:34.2rem;
+    display:flex;
+
+    align-items:center;
+}
+#textdetail{
+    font-weight:600;
+    font-size:1.6rem;
+    margin: 0.8rem 0;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}

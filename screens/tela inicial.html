@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/ico_budlle_top.png"
+      type="image/x-icon"
+    />
+    <title>Budlle</title>
+    <link rel="stylesheet" href="/style/style_inicial.css" />
+  </head>
+  <body>
+    <!-- Nova Publicação - tela suspensa -->
+    <div id="nova">
+    <div id="nova_publi">
+      <h2>No que você está pensando?</h2>
+      <img onclick="aparecerpubli()" src="/assets/close_aba.png" style="position: absolute; left: 93%; top: 4%">
+      <main id="publi_novas_perfil">
+      <div class="publi_side">
+        <label for="desc_post">Descrição</label>
+        <input type="text" id="desc_post" name="desc_post" />
+
+        <label for="assunto_post">Qual o assunto?</label>
+        <div class="sugest_post">*Insira as tags post.</div>
+        <input type="text" id="assunto_post" name="assunto_post" />
+        <img src="/assets/Ico_add_tag.png" style="position: absolute; top: calc(50% + 7.4rem); left: 35rem;">
+
+        <label for="link_post">Link</label>
+        <div class="sugest_post">*Você possui um link github ou behance</div>
+        <input type="text" id="link_post" name="link_post" />
+      </div>
+
+      <div class="publi_side publi_side_p" style="margin-top:3.9rem;">
+        <div id="publi_side_inside">
+        <img width="80%" src="/assets/solta_ico_img.png" alt="arquivos">
+        <p>Solte aqui os arquivos:</p>
+      </div>
+
+        <div  id="btns_part"> 
+          <button id="btn_files">Abrir arquivos <img src="/assets/seta_ico_baixo.png" alt="seta"></button>
+          <button id="btn_publi">Publicar Post</button>
+        </div>
+      </div>
+    </main>
+    </div> 
+  </div>
+
+    <header>
+      <img id="logo" src="/assets/logo_cad_1.png" alt="logo" />
+      <nav id="links">
+        <!-- Colocado tags <a>, nos liks do nav para futura atualizações -->
+        <div class="link">
+          <a href=""><img src="/assets/pesquisa_ico.png" alt="pesquisa" /></a>
+          <h3>Pesquisa</h3>
+        </div>
+        <div class="link">
+          <a href="tela explorar.html"><img src="/assets/explorar_ico.png" alt="explorar" /></a>
+          <h3>Explorar</h3>
+        </div>
+        <div class="link">
+          <a href="tela perfil.html"
+            ><img height="36rem" src="/assets/perfil_ico.png" alt="perfil"
+          /></a>
+          <h3>Perfil</h3>
+        </div>
+      </nav>
+    </header>
+    <div id="header"></div>
+    <span onclick="aparecerpubli()" id="novopost"><img src="/assets/cruz_inic.png" /></span>
+
+    <main>
+      <div class="post">
+        <aside>
+          <div class="post_left">
+            <img class="post_perfil_img" src="/assets/perfil.png" />
+            <h2 class="title_perfil_post">
+              Cadu <br />
+              Eduardo
+            </h2>
+            <p class="sub_title_perfil_post">@cadux_43</p>
+            <div class="tags">
+              <span class="tag">#uxers</span>
+              <span class="tag">#programa</span>
+              <span class="tag">#figmalover</span>
+              <span class="tag">#css</span>
+              <span class="tag">#html</span>
+              <span class="tag">#workaholic</span>
+              <span class="tag">#neverm</span>
+              <span class="tag">#squad</span>
+              <span class="tag">#xd_nunca</span>
+              <span class="tag">#scss</span>
+            </div>
+          </div>
+          <div class="post_left_detais"></div>
+        </aside>
+        <main class="post_centro">
+          <table class="grade_img_post">
+            <tr>
+              <td rowspan="2">
+                <img src="/assets/i_1.png" class="img_esq" />
+              </td>
+              <td>
+                <img src="/assets/i_2.png" class="img_dir1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/i_3.png" class="img_dir2" />
+              </td>
+            </tr>
+          </table>
+          <div class="description_post">
+            <h2>
+              <strong class="post_en">Cadu</strong> Fiz um projeto no VS Code
+              para uma aba de um site que eu...
+            </h2>
+            <button type="button" class="botao_link_desc">
+              Abrir repositório <img src="/assets/gith_ico.png" />
+            </button>
+          </div>
+
+          <div class="comentarios">
+            <div class="cometario">
+              <p><strong class="coment_en">Maiki09</strong> vida de deveh!</p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Vini_cocielo</strong> Que site mara
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Paulo_guedes</strong> o melhor
+                investimento é a educação.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Igão</strong> Dev, puff, nada, vou pro
+                meu figma.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="right">
+          <img src="/assets/heart_ico_3.png" alt="Curtir" class="img_acoes" />
+          <img src="/assets/share_ico.png" alt="share" class="img_acoes" />
+          <img src="/assets/flag_ico.png" alt="flag_ico" class="img_acoes" />
+          <div class="right_border"></div>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <div class="post">
+        <aside>
+          <div class="post_left">
+            <img class="post_perfil_img" src="/assets/perfil_ico_2.png" />
+            <h2 class="title_perfil_post">
+              Amanda <br />
+              Sousa
+            </h2>
+            <p class="sub_title_perfil_post">@amds_03</p>
+            <div class="tags">
+              <span class="tag">#design</span>
+              <span class="tag">#html5</span>
+              <span class="tag">#adobexd</span>
+              <span class="tag">#css</span>
+              <span class="tag">#spark</span>
+              <span class="tag">#canvas</span>
+              <span class="tag">#neverm</span>
+              <span class="tag">#squad</span>
+              <span class="tag">#xd_nunca</span>
+              <span class="tag">#scss</span>
+            </div>
+          </div>
+          <div class="post_left_detais"></div>
+        </aside>
+        <main class="post_centro">
+          <table class="grade_img_post">
+            <tr>
+              <td rowspan="2">
+                <img src="/assets/i_11.png" class="img_esq" />
+              </td>
+              <td>
+                <img src="/assets/i_21.png" class="img_dir1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/i_31.png" class="img_dir2" />
+              </td>
+            </tr>
+          </table>
+          <div class="description_post">
+            <h2>
+              <strong class="post_en">Amanda</strong> Esse é um esboço de alguns
+              códigos que fiz relacionados...
+            </h2>
+            <button type="button" class="botao_link_desc">
+              Abrir repositório <img src="/assets/gith_ico.png" />
+            </button>
+          </div>
+
+          <div class="comentarios">
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">juh_s_lima</strong> Qual API você usou
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Vini_cocielo</strong> Ficou incrível
+                parabéns.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Pedro_r</strong> Não sou programador
+                mas achei muito bom.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Igão</strong> Dev nada, vou mais pro
+                figma e abraço.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="right">
+          <img src="/assets/heart_ico_3.png" alt="Curtir" class="img_acoes" />
+          <img src="/assets/share_ico.png" alt="share" class="img_acoes" />
+          <img src="/assets/flag_ico.png" alt="flag_ico" class="img_acoes" />
+          <div class="right_border"></div>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <div class="post">
+        <aside>
+          <div class="post_left">
+            <img class="post_perfil_img" src="/assets/perfil_ico_3.png" />
+            <h2 class="title_perfil_post">
+              David <br />
+              Viana
+            </h2>
+            <p class="sub_title_perfil_post">@gam_davi</p>
+            <div class="tags">
+              <span class="tag">#usabilidade</span>
+              <span class="tag">#csd</span>
+              <span class="tag">#minimalism</span>
+              <span class="tag">#css</span>
+              <span class="tag">#html</span>
+              <span class="tag">#loveadobe</span>
+              <span class="tag">#neverm</span>
+              <span class="tag">#squad</span>
+              <span class="tag">#xd_nunca</span>
+              <span class="tag">#scss</span>
+            </div>
+          </div>
+          <div class="post_left_detais"></div>
+        </aside>
+        <main class="post_centro">
+          <table class="grade_img_post">
+            <tr>
+              <td rowspan="2">
+                <img src="/assets/i_12.png" class="img_esq" />
+              </td>
+              <td>
+                <img src="/assets/i_22.png" class="img_dir1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/i_32.png" class="img_dir2" />
+              </td>
+            </tr>
+          </table>
+          <div class="description_post">
+            <h2>
+              <strong class="post_en">David</strong> Um portfolio minimalista
+              que fiz no Behance para o projeto...
+            </h2>
+            <button type="button" class="botao_link_desc">
+              Abrir portfolio <img src="/assets/bh_ico.png" />
+            </button>
+          </div>
+
+          <div class="comentarios">
+            <div class="cometario">
+              <p><strong class="coment_en">carlos_cod</strong> Muito bom!!</p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Vitor_carvalho</strong> Gostei desse
+                minimalismo.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Hugo_matinho</strong> Parabéns!👏👏
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">João65</strong> Adoro usar o Behance
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="right">
+          <img src="/assets/heart_ico_3.png" alt="Curtir" class="img_acoes" />
+          <img src="/assets/share_ico.png" alt="share" class="img_acoes" />
+          <img src="/assets/flag_ico.png" alt="flag_ico" class="img_acoes" />
+          <div class="right_border"></div>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <div class="post">
+        <aside>
+          <div class="post_left">
+            <img class="post_perfil_img" src="/assets/perfil_ico_4.png" />
+            <h2 class="title_perfil_post">
+              Marcos <br />
+              Lopes
+            </h2>
+            <p class="sub_title_perfil_post">@marco_lo</p>
+            <div class="tags">
+              <span class="tag">#persona</span>
+              <span class="tag">#uier</span>
+              <span class="tag">#wireframe</span>
+              <span class="tag">#css</span>
+              <span class="tag">#html</span>
+              <span class="tag">#workaholic</span>
+              <span class="tag">#1lovefigma</span>
+              <span class="tag">#xdn</span>
+              <span class="tag">#xd_nunca</span>
+              <span class="tag">#scss</span>
+            </div>
+          </div>
+          <div class="post_left_detais"></div>
+        </aside>
+        <main class="post_centro">
+          <table class="grade_img_post">
+            <tr>
+              <td rowspan="2">
+                <img src="/assets/i_13.png" class="img_esq" />
+              </td>
+              <td>
+                <img src="/assets/i_23.png" class="img_dir1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/i_33.png" class="img_dir2" />
+              </td>
+            </tr>
+          </table>
+          <div class="description_post">
+            <h2>
+              <strong class="post_en">Marcos</strong> Esse é um exemplo de um
+              Pop-up em um site que estou...
+            </h2>
+            <button type="button" class="botao_link_desc">
+              Abrir repositório <img src="/assets/gith_ico.png" />
+            </button>
+          </div>
+
+          <div class="comentarios">
+            <div class="cometario">
+              <p><strong class="coment_en">cat_tec</strong> Show!</p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">chico_cortela</strong> Como você
+                padronizou a margin?
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">PauloLima</strong> Quero ver o css!
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+
+            <div class="cometario">
+              <p>
+                <strong class="coment_en">Tomas98</strong> Faltou o design, mas
+                por enquanto tá com boa funcionalidade.
+              </p>
+              <div class="img_comentario">
+                <img
+                  src="/assets/heart_ico.png"
+                  alt="curtir imagem"
+                  class="ico_comen"
+                /><img
+                  src="/assets/messages_ico.png"
+                  alt="direct"
+                  class="ico_comen"
+                /><img
+                  src="/assets/tpontos_ico.png"
+                  alt="tres pontos"
+                  class="ico_comen"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="right">
+          <img src="/assets/heart_ico_3.png" alt="Curtir" class="img_acoes" />
+          <img src="/assets/share_ico.png" alt="share" class="img_acoes" />
+          <img src="/assets/flag_ico.png" alt="flag_ico" class="img_acoes" />
+          <div class="right_border"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script>
+      let open = false;
+      function aparecerpubli(){
+        if(open == false){
+          document.getElementById('nova').style.display = 'block';
+          open = true
+        }else{
+          document.getElementById('nova').style.display = 'none';
+          open = false;
+        }
+      }
+    </script>
+  </body>
+</html>

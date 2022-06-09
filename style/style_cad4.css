@@ -1,0 +1,159 @@
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,600;1,300;1,400&display=swap');
+/* CORES */
+/* 
+#F5F5F5
+#252525
+#5909CE
+#F48400
+#9061C2 */
+
+/* INICIO */
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: Flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/flores_cad_4.png');
+    background-size: 100%;
+    backdrop-filter: brightness(60%);
+}
+aside, main{
+    width: 50%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* BLOCO ESQUERDA */
+aside{
+    padding: 8rem;
+    align-items: center;
+    display: flex;
+}
+#budlle{
+    height:8.1rem;
+}
+
+/* BLOCO DIREITA */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+/* status bar */
+.indice{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 2.4rem 0;
+    align-items: center;
+}
+
+.circulo{
+    background-color: rgba(0, 0, 0, 0);
+    height:2rem;
+    width:2rem;
+    border-radius:50px;
+    border:2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.4rem;
+    font-weight:600;
+}
+.roxo{
+    border:3px solid #5909CE;
+    background-color: #5909CE;
+    color:#fff;
+}
+.roxot{
+    color:#5909CE;
+}
+.txt_status{
+    font-size:1.2rem;
+    font-family: Rubik;
+    font-weight:600;
+    width: 33%;
+
+}
+hr{
+    height: 0px;
+    width: 8rem; 
+}
+
+/* principal */
+#titulo{
+    margin: 0.3rem 0 2.3rem 0;
+    font-size: 3.2rem;
+}
+
+#questionario_cadastro{
+    background-color: #F5F5F5;
+    height: 56.2rem;
+    border-radius:3rem;
+    width: 40rem;
+    box-shadow: 1.6rem 1.6rem 1.6rem rgba(0, 0, 0, 0.15);
+    padding: 0 4.4rem;
+
+}
+#codigo_email{
+    padding: 1.4rem 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#num_codigo{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+.num_confirm_cad{
+    width: 8rem;
+    height: 4.8rem;
+    margin: 0 1rem;
+    border: none;
+    border-bottom: solid black 1px;
+    background-color: #F5F5F5;
+    font-family:'DM Sans', sans-serif ;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#botao{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight:600; 
+    margin: 7rem 0 0 auto;
+    background-color:transparent;
+    border: none;   
+    gap: 0.5em;
+    cursor: pointer;
+}
+#botao1{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight:600; 
+    margin: 7rem 3rem 0 auto;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 20px;
+    padding: 0.5rem 1.3rem;
+}
+#opcoes{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}

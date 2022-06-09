@@ -1,0 +1,162 @@
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+@font-face {
+    font-family: 'Dubai';
+    src: url(/assets/font-dubai/Dubai-Medium.woff);
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url(/assets/font-dubai/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rubik_light';
+    src: url(/assets/font-dubai/Rubik-Light.ttf);
+}
+@font-face {
+    font-family: 'Rubik_bold';
+    src: url(/assets/font-dubai/Rubik-Bold.ttf);
+}
+
+/* CORES */
+/* 
+#F5F5F5
+#252525
+#1D1D1D
+#131313
+#5909CE
+#F48400
+#9061C2 */
+
+/* INICIO */
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+
+    width: 100%;
+    height: 100vh;
+    color:#fff;
+    background-color: #131313;
+}
+header{
+    display: flex;
+    padding:0 11.0rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    background: linear-gradient(180deg, #252525 0%, #2C2C2C 94.27%);
+    margin: 0 0 4.8rem 0;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.01);
+    border-radius: 0px 0px 16px 16px;
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    z-index: 1;   
+}
+#header{
+    height: 8rem;
+    width: 100%;
+    margin: 0 0 4.8rem 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width:20%;
+}
+#links{
+    display: flex;
+    justify-content: space-around;
+    gap: 4.8rem;
+    align-items: center;
+}
+.link{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size:1.3rem;
+    font-family: 'Dm Sans';
+    font-weight:500;
+}
+
+/* Principal */
+
+/* perfil */
+.perfil_ico{
+    height: 23.2rem;
+    width: 23.2rem;
+}
+.perfil_name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-family: 'Dm Sans';
+}
+.sub_title_perfil_post{
+    font-family: 'Dm Sans';
+    font-weight: 300;
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+    color: #F48400;
+
+}
+#info_text_perfil{
+    display: flex;
+    position: relative;
+    margin-top: 2.4rem; 
+}
+#t_pontos_perfil{
+    height: 0.85rem; 
+    margin: 2rem;
+    left: 100%;
+    position: absolute;
+
+}
+
+/* action perfil */
+.actions_perfil, .actions_perfil > div{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0.6rem 0 0 0; 
+}
+.action_perfil{
+    font-size:2.4rem;
+    color: #5909CE;
+    font-family: 'Dm Sans';
+    font-style: Regular;
+}
+
+div.seguidores > h3{
+    font-family: Rubik;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+.seguidores{
+    display: flex;
+}
+
+#posts_perfil{
+    display: grid; 
+    margin-top: 7.807rem;
+    margin-bottom: 8.191rem;
+    grid-template-columns: 320px 320px 320px;
+    column-gap: 7.408rem;
+    row-gap: 4.127rem;
+}
+.post_perfil > img {
+    width: 320px;
+    height: 320px;
+}
